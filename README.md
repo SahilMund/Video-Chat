@@ -147,18 +147,14 @@ navigator.mediaDevices.getUserMedia({
 
 
 ```
-
 const {ExpressPeerServer} = require('peer');
-
 const peerServer = ExpressPeerServer(server ,{
     debug:true
 })
-
   ```
 
   ##### 2.  middleware for running the peer server :- (index.js)
   ```
-  
 app.use('/peerjs',peerServer);
 ```
  ##### 3.Check it: http://127.0.0.1:9000/peerjs
